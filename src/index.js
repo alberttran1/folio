@@ -1,11 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import background from "./img/background.jpg";
+import './index.css';
 
-const App = () => (
-  <div>
-    <p>Hello world</p>
-  </div>
-)
+// background
+const Background = () => {
+  return (
+    <img src={background} class="bg" alt="background"></img>
+  )
+}
+
+const App = () => {
+  return (
+    <Background />
+  )
+}
 
 
 ReactDOM.render(<App />,document.getElementById('root'));
