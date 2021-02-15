@@ -43,9 +43,10 @@ img.bg {
   font-size: 32px;
   line-height: 25px;
   border-radius: 4px;
-  font-family:Calibri, sans-serif;
+  font-family: Calibri, sans-serif;
   margin-right: 30px;
   margin-top: 5px;
+  transition: color 0.2s;
 }
 
 .header img.logo {
@@ -55,13 +56,20 @@ img.bg {
 }
 
 .header a.menu:hover {
-  background-color: #ddd;
-  color: black;
+  color: rgb(154, 229, 254);
+  transition: color 0.2s;
 }
 
 .header a.active {
   background-color: rgb(154, 229, 254);
   color: white;
+  transition: background-color 0.2s;
+}
+
+.header a.active:hover {
+  background-color: rgb(55, 181, 253);
+  transition: background-color 0.2s;
+  
 }
 
 .header-right {
