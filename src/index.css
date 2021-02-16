@@ -106,20 +106,3 @@ button.start:hover {
   background-color: rgb(55, 181, 253);
   transition: 0.2s;
 }
-
-/* SIGN UP FORM */
-
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 3; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
-  padding-top: 50px;
-}
