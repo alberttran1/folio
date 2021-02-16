@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Form } from '../Form';
 import FocusTrap from 'focus-trap-react';
+import logo from "../img/folioLogo.png";
 export const Modal = ({
   onClickOutside,
   onKeyDown,
@@ -22,6 +23,7 @@ export const Modal = ({
         onKeyDown={onKeyDown}
       >
         <div className="modal-area" ref={modalRef}>
+        <img src = {logo} class="form-logo"></img>
           <button
             ref={buttonRef}
             aria-label="Close Modal"

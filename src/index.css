@@ -126,7 +126,7 @@ button.start:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 2.5em 1.5em 1.5em 1.5em;
+  padding: 1em 1.5em 1.5em 1.5em;
   background-color: #ffffff;
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
@@ -155,6 +155,8 @@ button.start:hover {
   border: 0;
   box-shadow: 0;
   cursor: pointer;
+  outline: none;
+  transition: 0.2s;
 }
 
 ._modal-close-icon {
@@ -164,6 +166,11 @@ button.start:hover {
   stroke: black;
   stroke-linecap: round;
   stroke-width: 2;
+}
+
+._modal-close:hover {
+  background: rgb(255, 109, 109);
+  transition: 0.2s;
 }
 
 .modal-body {
@@ -179,4 +186,41 @@ button.start:hover {
   position: absolute !important;
   width: 1px !important;
   white-space: nowrap !important;
+}
+
+.form-group label {
+  font-family: Calibri, sans-serif;
+}
+
+.form-group input {
+  padding: 10px 10px;
+  width: 60%;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 2px;
+}
+
+button.form-button {
+  text-decoration: none;
+  background-color: rgb(55, 181, 253);
+  color: white;
+  border-radius: 4px;
+  padding: 10px 10px;
+  font-family: Calibri, sans-serif;
+  font-size: 16px;
+  transition: 0.2s;
+  border: solid;
+  border-width: 1px;
+  outline: none;
+  width: 65%;
+}
+
+button.form-button:hover {
+  background-color: white;
+  color: rgb(55, 181, 253);
+  transition: 0.2s;
+}
+
+img.form-logo {
+  height: 10%;
+  width: 10%;
 }
