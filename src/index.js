@@ -24,11 +24,19 @@ const Header = () => {
   )
 }
 
+// Text
+const Text = () => {
+  return (
+    <p class="title">Everything you <br></br>need to grow online.</p>
+  )
+}
+
 const App = () => {
   return (
     <div>
       <div style={{zIndex: 1, position: "absolute"}}><Background /></div>
-      <div style={{zIndex: 2, position: "absolute"}}><Header /></div>
+      <div style={{zIndex: 2, position: "relative"}}><Header /></div>
+      <div style={{zIndex: 2, position: "absolute"}}><Text /></div>
     </div>
   )
 }

@@ -50,9 +50,9 @@ img.bg {
 }
 
 .header img.logo {
-  width: 100px;
-  height: 100px;
-  margin-left: 5px;
+  width: 75px;
+  height: 75px;
+  margin-left: 2.5%;
 }
 
 .header a.menu:hover {
@@ -76,13 +76,12 @@ img.bg {
   float: right;
 }
 
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
+
+/* TEXT */
+p.title {
+  margin-left: 200px;
+  color: white;
+  font-family: Calibri, sans-serif;
+  font-size: 70px;
+  white-space: nowrap;
 }
