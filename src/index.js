@@ -24,10 +24,17 @@ const Header = () => {
   )
 }
 
-// Text
+// text
 const Text = () => {
   return (
-    <p class="title">Everything you <br></br>need to grow online.</p>
+    <p class="title">Create your own<br></br>professional portfolio.</p>
+  )
+}
+
+// get started
+const Start = () => {
+  return (
+    <a class="start" href="#">Get Started</a>
   )
 }
 
@@ -37,6 +44,7 @@ const App = () => {
       <div style={{zIndex: 1, position: "absolute"}}><Background /></div>
       <div style={{zIndex: 2, position: "relative"}}><Header /></div>
       <div style={{zIndex: 2, position: "absolute"}}><Text /></div>
+      <div style={{zIndex: 3, position: "absolute"}}><Start /></div>
     </div>
   )
 }

@@ -19,8 +19,6 @@ code {
 /* BACKGROUND */
 
 img.bg {
-  width: 100vw;
-  height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,4 +82,25 @@ p.title {
   font-family: Calibri, sans-serif;
   font-size: 70px;
   white-space: nowrap;
+}
+
+/* GET STARTED */
+a.start {
+  text-decoration: none;
+  background-color: white;
+  color: rgb(154, 229, 254);
+  border-radius: 4px;
+  padding: 10px 10px;
+  font-family: Calibri, sans-serif;
+  font-size: 32px;
+  margin-left: 200px;
+  display: inline-block;
+  margin-top: 275px;
+  transition: 0.2s;
+}
+
+a.start:hover {
+  color: white;
+  background-color: rgb(55, 181, 253);
+  transition: 0.2s;
 }
