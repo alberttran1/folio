@@ -85,7 +85,7 @@ p.title {
 }
 
 /* GET STARTED */
-a.start {
+button.start {
   text-decoration: none;
   background-color: white;
   color: rgb(154, 229, 254);
@@ -97,10 +97,29 @@ a.start {
   display: inline-block;
   margin-top: 275px;
   transition: 0.2s;
+  border: none;
+  outline: none;
 }
 
-a.start:hover {
+button.start:hover {
   color: white;
   background-color: rgb(55, 181, 253);
   transition: 0.2s;
+}
+
+/* SIGN UP FORM */
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
 }
