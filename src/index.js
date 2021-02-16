@@ -89,7 +89,7 @@ class Modal extends React.Component {
   render() {
     return (
       <div>
-        <button class="Start" onClick={() => this.openModal()}>Open Modal</button>
+        <button class="start" onClick={() => this.openModal()}>Get Started</button>
 
         <ReactModalLogin
           visible={this.state.showModal}
@@ -119,6 +119,7 @@ const App = () => {
       <div style={{zIndex: 1, position: "absolute"}}><Background /></div>
       <div style={{zIndex: 2, position: "relative"}}><Header /></div>
       <div style={{zIndex: 2, position: "absolute"}}><Text /></div>
+      <div style={{zIndex: 2, position: "absolute"}}><Modal /></div>
     </div>
   )
 }
