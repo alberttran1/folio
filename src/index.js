@@ -32,13 +32,31 @@ const Text = () => {
   )
 }
 
+
+async function asyncCall(event,client) {
+  await client.connect();
+    const collection = client.db("newtest").collection("devices");
+    await collection.insertOne({
+      "name" : event.target.name.value,
+      "email" : event.target.email.value,
+      "password" : event.target.password.value
+    });
+    client.close();
+}
+
 const App = () => {
   const triggerText = 'Get Started';
+
+  const MongoClient = require('mongodb').MongoClient;
+  const uri = "mongodb+srv://Alberttran1:Cheekypoop123@cluster0.x4jd1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+  const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+
     const onSubmit = (event) => {
     event.preventDefault(event);
     console.log(event.target.name.value);
     console.log(event.target.email.value);
     console.log(event.target.password.value);
+    asyncCall(event,client);
   };
 
   return (
