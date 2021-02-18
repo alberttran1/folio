@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Form } from '../Form';
+import { Form } from '../Form/Form';
 import FocusTrap from 'focus-trap-react';
 import logo from "../img/folioLogo.png";
+
 export const Modal = ({
   onClickOutside,
   onKeyDown,
